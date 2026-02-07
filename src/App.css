@@ -1,0 +1,242 @@
+/**
+ * Fuel Price Analysis Dashboard - Theme Styles
+ * Clean, modern design with light/dark theme support
+ */
+
+/* Fuel Pump Loading Animation */
+.fuel-pump-loader {
+  animation: pump-bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes pump-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.fuel-drop {
+  animation: drip 1.5s ease-in-out infinite;
+}
+
+@keyframes drip {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* App Wrapper */
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+/* Header Section */
+.app-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-icon {
+  background: linear-gradient(135deg, #FF7F50 0%, #FF6B35 100%) !important;
+}
+
+.header-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--bg-hover);
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+  padding-bottom: 40px;
+}
+
+/* Filters Section */
+.filters-section {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-input {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-input);
+  color: var(--text-secondary);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: #228be6;
+}
+
+/* Stat Cards */
+.stat-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-card);
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  transition: color 0.3s ease;
+}
+
+.stat-high {
+  color: #fa5252;
+}
+
+.stat-low {
+  color: #20c997;
+}
+
+.stat-range {
+  color: #7950f2;
+}
+
+/* Chart Section */
+.chart-section {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Mantine Select dropdown customization */
+.mantine-Select-dropdown {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-input);
+}
+
+.mantine-Select-option {
+  color: var(--text-secondary);
+}
+
+.mantine-Select-option[data-selected] {
+  background: #228be6;
+  color: #ffffff;
+}
+
+.mantine-Select-option:hover {
+  background: var(--bg-hover);
+}
+
+/* Mantine component dark mode overrides */
+[data-theme="dark"] .mantine-Card-root {
+  background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .mantine-Paper-root {
+  background-color: var(--bg-secondary);
+}
+
+[data-theme="dark"] .mantine-Select-input {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-input);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .mantine-Badge-root[data-variant="light"] {
+  background-color: var(--bg-hover);
+}
+
+/* Dark mode text overrides for Mantine components */
+[data-theme="dark"] .mantine-Text-root {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .mantine-Text-root[data-c="dimmed"] {
+  color: var(--text-dimmed) !important;
+}
+
+[data-theme="dark"] .mantine-Title-root {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .mantine-Select-label {
+  color: var(--text-secondary);
+}
+
+/* Fix filter label icons in dark mode */
+.filter-label-icon {
+  fill: #666;
+  transition: fill 0.3s ease;
+}
+
+[data-theme="dark"] .filter-label-icon {
+  fill: var(--text-secondary);
+}

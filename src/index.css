@@ -1,0 +1,67 @@
+/**
+ * Global styles for Fuel Price Analysis Dashboard
+ * CSS variables for light/dark theme support
+ */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Light theme (default) */
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #ffffff;
+  --bg-hover: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --text-dimmed: #868e96;
+  --border-color: #e9ecef;
+  --border-input: #dee2e6;
+  --shadow-card: rgba(0, 0, 0, 0.08);
+  --scrollbar-track: #f1f3f5;
+  --scrollbar-thumb: #ced4da;
+  --scrollbar-thumb-hover: #adb5bd;
+  --loader-bg: #f8f9fa;
+
+  color-scheme: light;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-primary: #1a1b1e;
+  --bg-secondary: #25262b;
+  --bg-hover: #2c2e33;
+  --text-primary: #f1f3f5;
+  --text-secondary: #ced4da;
+  --text-dimmed: #909296;
+  --border-color: #373A40;
+  --border-input: #4d4f56;
+  --shadow-card: rgba(0, 0, 0, 0.3);
+  --scrollbar-track: #25262b;
+  --scrollbar-thumb: #4d4f56;
+  --scrollbar-thumb-hover: #5c5f66;
+  --loader-bg: #1a1b1e;
+
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
