@@ -2,7 +2,7 @@
 
 A modern, interactive dashboard for visualizing fuel prices (Petrol and Diesel) across India's major metro cities. Built with React, TypeScript, and Apache ECharts.
 
-![Dashboard Screenshot](./screenshots/dashboard-full.png)
+![Dashboard Screenshot](./screenshots/dashboard_light_theme.png)
 
 ## 🔗 Live Demo
 
@@ -125,21 +125,7 @@ The application includes several optimized data processing functions:
 - **Purpose:** Calculates monthly average RSP for a specific city/fuel/year
 - **Uses:** Map for O(1) lookups during month-based aggregation
 
-### `calculateYearlyStats(monthlyData)`
-- **Time Complexity:** O(m) where m = number of months
-- **Purpose:** Computes yearly statistics (average, highest/lowest month, range)
 
-### `calculateMonthlyAverages(data, product)`
-- **Time Complexity:** O(n) - single pass through data
-- **Purpose:** Calculates monthly averages across all cities for a fuel type
-
-### `calculateYearlyAverages(data)`
-- **Time Complexity:** O(n)
-- **Purpose:** Computes yearly averages for Petrol and Diesel
-
-### `calculateCityComparison(data, year)`
-- **Time Complexity:** O(n) for filtered dataset
-- **Purpose:** Generates city-wise comparison for a specific year
 
 ---
 
@@ -175,13 +161,13 @@ Dataset covers: **June 2017 - June 2025**
 ##  Screenshots
 
 ### Full Dashboard View
-![Full Dashboard](./screenshots/dashboard-full.png)
+![Full Dashboard](./screenshots/dashboard_light_theme.png)
 
-### Dashboard Dark Mode
-![Dashboard Dark Mode](./screenshots/dashboard-dark.png)
+### Latest Price
+![Dashboard Dark Mode](./screenshots/Latest_prices.png)
 
 ### Monthly Trends Chart
-![Monthly Trends](./screenshots/monthly-trends.png)
+![Monthly Trends](./screenshots/Montly_price_chart.png)
 
 ---
 
@@ -197,7 +183,7 @@ Dataset covers: **June 2017 - June 2025**
 
 ## �‍💻 Author
 
-**Ashutosh Tripathi** (ashutosh-techbit)  
+**Ashutosh Bansal** (ashutosh-techbit)  
 GitHub: [@Ashutosh-techbit](https://github.com/Ashutosh-techbit)
 
 ---

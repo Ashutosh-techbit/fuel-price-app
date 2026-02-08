@@ -4,7 +4,6 @@ This folder contains screenshots of the Fuel Price Analytics Dashboard.
 
 ## Required Screenshots
 
-Please capture and add the following screenshots:
 
 1. **dashboard-full.png** - Full dashboard view showing all sections
 2. **latest-prices.png** - Close-up of the Latest Prices section

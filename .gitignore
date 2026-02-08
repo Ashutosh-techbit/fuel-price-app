@@ -11,8 +11,6 @@ build/
 .vite/
 
 # Environment variables
-.env
-.env.local
 .env.*.local
 
 # Logs
@@ -27,7 +25,6 @@ lerna-debug.log*
 Thumbs.db
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -39,3 +36,4 @@ Thumbs.db
 *.bak
 .cache/
 .eslintcache
+config.bat
