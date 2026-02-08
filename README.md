@@ -6,7 +6,7 @@ A modern, interactive dashboard for visualizing fuel prices (Petrol and Diesel) 
 
 ## 🔗 Live Demo
 
-**Deployment URL:** [Add your deployment URL here after deploying to Vercel/Netlify/GitHub Pages]
+**Live URL:** https://fuelpricesdashboard.netlify.app/
 
 ---
 
@@ -172,75 +172,16 @@ Dataset covers: **June 2017 - June 2025**
 
 ---
 
-## 🚢 Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your GitHub repository
-4. Configure build settings:
-   - Framework Preset: `Vite`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. Deploy!
-
-### Deploy to Netlify
-
-1. Push your code to GitHub
-2. Go to [netlify.com](https://netlify.com)
-3. New site → Import from Git
-4. Configure:
-   - Build Command: `npm run build`
-   - Publish Directory: `dist`
-5. Deploy!
-
-### Deploy to GitHub Pages
-
-1. Install gh-pages:
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. Add to `package.json`:
-   ```json
-   "homepage": "https://your-username.github.io/fuel-price-app",
-   "scripts": {
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-
-3. Update `vite.config.ts`:
-   ```typescript
-   export default defineConfig({
-     base: '/fuel-price-app/',
-     // ... other config
-   })
-   ```
-
-4. Build and deploy:
-   ```bash
-   npm run build
-   npm run deploy
-   ```
-
----
-
-## 📸 Screenshots
+##  Screenshots
 
 ### Full Dashboard View
 ![Full Dashboard](./screenshots/dashboard-full.png)
 
-### Latest Prices Section
-![Latest Prices](./screenshots/latest-prices.png)
+### Dashboard Dark Mode
+![Dashboard Dark Mode](./screenshots/dashboard-dark.png)
 
 ### Monthly Trends Chart
 ![Monthly Trends](./screenshots/monthly-trends.png)
-
-### City Comparison Chart
-![City Comparison](./screenshots/city-comparison.png)
-
-> **Note:** Add screenshots to the `screenshots/` folder after capturing them from your deployed application.
 
 ---
 
@@ -254,16 +195,10 @@ Dataset covers: **June 2017 - June 2025**
 
 ---
 
-## 📄 License
+## �‍💻 Author
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Author
-
-**Your Name**  
-GitHub: [@your-username](https://github.com/your-username)
+**Ashutosh Tripathi** (ashutosh-techbit)  
+GitHub: [@Ashutosh-techbit](https://github.com/Ashutosh-techbit)
 
 ---
 
